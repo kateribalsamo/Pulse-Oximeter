@@ -1,7 +1,3 @@
-<img width="244" height="169" alt="image" src="https://github.com/user-attachments/assets/3b77db9c-6fd0-4430-9b2e-e2c2a70a2188" />
-
-
-https://github.com/user-attachments/assets/9d8bb47d-1ec7-4706-93c8-251ecae84896
 
 # Pulse-Oximeter
 Integrated hardware and mobile application prototype that transmits pulse oximeter data via BLE and visualizes real-time heart rate, SpO₂, and IR signals.
