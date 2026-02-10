@@ -13,7 +13,7 @@
 //Defining pulse oximeter sensor as a class
 MAX30105 particleSensor;
 
-// these used to be locals in setup() — pull them out to globals
+// global led parameters
 const byte ledBrightness = 50;
 const byte sampleAverage = 1;
 const byte ledMode      = 2;
