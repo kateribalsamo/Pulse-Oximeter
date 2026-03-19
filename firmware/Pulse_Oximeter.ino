@@ -177,9 +177,9 @@ void setup() {
   particleSensor.setup(ledBrightness, sampleAverage, ledMode, sampleRate, pulseWidth, adcRange);  //Configures sensor
 
   //Initializing OLED
-  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))  //If OLED was not foudn
+  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))  //If OLED was not found
   {
-    Serial.println(F("OLED not found, please check wiring/power"));  //Prints to scrreen
+    Serial.println(F("OLED not found, please check wiring/power"));  //Prints to screen
     while (1)
       ;  //While true loop does not continue
   }
@@ -194,8 +194,8 @@ void setup() {
   int x = (SCREEN_WIDTH - message.length() * 6) / 2;  //Width of message on screen centered
   int y = (SCREEN_HEIGHT - 8) / 2;                    //Height of message on screen centered
   display.setCursor(x, y);                            //Placement
-  display.print(message);                             //Dispaly on Oled
-  display.display();                                  //Display on screen
+  display.print(message);                             //Display on OLED
+  display.display();                                  //Display on serial monitor
   delay(1000);                                        //Delay for system stability
 
   //Initializing BLE
